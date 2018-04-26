@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CircleComponent } from './circle.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, CircleComponent
   ],
   imports: [
     BrowserModule
