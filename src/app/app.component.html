@@ -1,5 +1,11 @@
+<div class="bg" [ngStyle]="{'background-image': 'url(' + photo + ')'}">
+
 <svg viewBox="0 0 10000 10000">
   <svg:g mb-circle
-    *ngFor="let circle of circles"
-    [circle]="circle" />
+    *ngFor="let star of stars"
+    [circle]="star" />
+  <svg:g mb-circle (click)="starClick(star)"
+    *ngFor="let star of constellations"
+    [circle]="star" />
 </svg>
+</div>
